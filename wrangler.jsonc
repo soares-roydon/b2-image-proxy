@@ -7,10 +7,19 @@
 	"name": "b2-image-proxy",
 	"main": "src/index.js",
 	"compatibility_date": "2026-10-01",
+	"compatibility_flags": [
+		"global_fetch_strictly_public"
+	],
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"vars": {
+		"ALLOW_LIST_BUCKET": "false",
+		"B2_APPLICATION_KEY_ID": "0057e98785246880000000006",
+		"B2_ENDPOINT": "https://s3.us-east-005.backblazeb2.com",
+		"BUCKET_NAME": "roymap"
+	}
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
